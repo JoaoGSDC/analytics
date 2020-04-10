@@ -6,13 +6,9 @@ import { GraphicsComponent } from './pages/graphics/graphics.component';
 
 const routes: Routes = [
   {
-  // path: '', loadChildren: () => import('../app/main/main.module').then(m => m.MainModule)
   path: '',
   component: MainComponent,
-  children: [{
-    path: '',
-    component: GraphicsComponent
-  },
+  children: [
   {
     path: 'graphics',
     component: GraphicsComponent

@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { GraphicsRoutingModule } from './graphics-routing.module';
 import { GraphicsComponent } from './graphics.component';
+import { BarsComponent } from './bars/bars.component';
 
 
 @NgModule({
-  declarations: [GraphicsComponent],
+  declarations: [GraphicsComponent, BarsComponent],
   imports: [
     CommonModule,
     GraphicsRoutingModule

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Chart } from 'chart.js';
 
 @Component({
   selector: 'app-graphics',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GraphicsComponent implements OnInit {
 
+  LineChart = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
