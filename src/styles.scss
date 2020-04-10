@@ -7,12 +7,19 @@ body {
 }
 
 .card {
-  top: 65px;
-  left: 115px;
-  padding: 30px;
-  position: fixed;
+  flex-grow: 1;
+  margin: 10px;
+  padding: 20px;
   border-radius: 3px;
   background-color: #202020;
+}
+
+.container {
+  // top: 65px;
+  margin-left: 100px;
+  display: flex;
+  position: static;
+  flex-wrap: wrap;
 }
 
 html,
@@ -46,6 +53,7 @@ a {
 }
 
 .sidebar-open {
+  overflow: auto;
   transition: 0.3s !important;
   width: 200px !important;
 }
@@ -57,4 +65,31 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(235, 133, 0); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(197, 112, 0); 
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    left: 15px;
+  }
 }
