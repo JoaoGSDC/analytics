@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  background-color: #181818;
+}
+
+.card {
+  top: 65px;
+  left: 115px;
+  padding: 30px;
+  position: fixed;
+  border-radius: 3px;
+  background-color: #202020;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-sidebar {
+  display: grid;
+}
+
+.btn-sidebar-open {
+  display: initial;
+}
+
+.logo-mini {
+  height: 40px;
+  padding-top: 5px;
+  margin-left: 115px;
+  filter: grayscale(30%);
+}
+
+.sidebar-open {
+  transition: 0.3s !important;
+  width: 200px !important;
+}
+
+.background-modal {
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
