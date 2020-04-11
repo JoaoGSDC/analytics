@@ -12,7 +12,7 @@
         Ano de Análise
       </label>
 
-      <select #selectYear (click)="loadInfoYear(selectYear.value === 'Todos' ? 1 : selectYear.value)">
+      <select #selectYear (change)="loadInfoYear(selectYear.value === 'Todos' ? 1 : selectYear.value)">
         <option *ngFor="let oYear of years; let i = index;">
           {{ years[years.length - (i + 1)] === 1 ? 'Todos' : years[years.length - (i + 1)] }}
         </option>
