@@ -96,7 +96,7 @@ export class GraphicsComponent implements OnInit {
         labels: this.graphicFooter,
         datasets: [
           {
-            label: "Electronic Shopping and Mail-Order Houses",
+            label: "E-commerce",
             backgroundColor: "rgba(153, 102, 255, 0.3)",
             data: this.value
           },
@@ -130,7 +130,7 @@ export class GraphicsComponent implements OnInit {
         labels: this.graphicFooter,
         datasets: [
           {
-            label: 'Number of Items Sold in Months',
+            label: 'E-commerce',
             data: this.value,
             fill: false,
             lineTension: 0.2,
