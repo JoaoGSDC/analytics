@@ -1,12 +1,25 @@
 <div class="container">
   <div class="card">
+
     <label>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id auctor sem. Etiam eleifend, nisl in dictum ornare,
-      odio orci tincidunt dui, blandit ultricies felis est in justo. Suspendisse efficitur interdum viverra. Vestibulum
-      imperdiet massa sit amet elementum vehicula. Nunc efficitur tortor ante, eget porta nunc tincidunt ut. In velit
-      nisl, ornare nec accumsan nec, ultrices ut nunc. Proin porttitor ipsum eu dui accumsan, ut luctus dui gravida. In
-      non libero metus.
+      Olá, seja bem vindo aos gráficos!
+      Logo a baixo você pode escolher qual o ano que deseja ver análises.
     </label>
+
+    <div class="comp">
+
+      <label>
+        Ano de Análise
+      </label>
+
+      <select #selectYear (click)="loadInfoYear(selectYear.value === 'Todos' ? 1 : selectYear.value)">
+        <option *ngFor="let oYear of years; let i = index;">
+          {{ years[years.length - (i + 1)] === 1 ? 'Todos' : years[years.length - (i + 1)] }}
+        </option>
+      </select>
+
+    </div>
+
   </div>
 
   <div class="card">

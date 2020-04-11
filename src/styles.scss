@@ -67,6 +67,15 @@ a {
   position: absolute;
 }
 
+select {
+  height: 30px;
+  padding: 5px;
+  color: #ffffff;
+  border: #3e3e3e;
+  border-radius: 3px;
+  background-color: #121212;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -89,7 +98,14 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+  .header {
+    position: fixed !important;
+  }
+
   .container {
-    left: 15px;
+    margin-left: 0;
+    max-width: 100%;
+    margin-top: 50px;
+    position: absolute;
   }
 }
