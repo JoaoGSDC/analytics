@@ -42,6 +42,7 @@ export class GraphicsComponent implements OnInit {
     this.createPieGraphic();
   }
 
+  // Ajusta os tamanhos dos gráficos em caso da resolução ser para mobile
   checkMobile(): void {
     if (window.innerWidth < 600) {
       const barChart = document.getElementById('barChart');
@@ -59,6 +60,7 @@ export class GraphicsComponent implements OnInit {
     }
   }
 
+  // Carrega valores para ser usado nos gráficos ao trocar os anos
   loadInfoYear(iYear: any) {
     this.value = [];
     this.total = [];
@@ -82,6 +84,7 @@ export class GraphicsComponent implements OnInit {
     this.createPieGraphic();
   }
 
+  // Carrega as informações ao inicializar o componente
   loadInfo(): void {
     this.totalDataGraphic.forEach((t) => {
       this.value.push(t.value);
@@ -89,6 +92,7 @@ export class GraphicsComponent implements OnInit {
     });
   }
 
+  // Cria gráfico de barras
   createBarsGraphic(): void {
     this.BarChart = new Chart('barChart', {
       type: 'bar',
@@ -123,6 +127,7 @@ export class GraphicsComponent implements OnInit {
     });
   }
 
+  // Cria gráfico de linhas
   createLineGraphic(): void {
     this.LineChart = new Chart('lineChart', {
       type: 'line',
@@ -163,6 +168,7 @@ export class GraphicsComponent implements OnInit {
     });
   }
 
+  // Cria gráfico de pizza
   createPieGraphic(): void {
     this.PieChart = new Chart('pieChart', {
       type: 'pie',

@@ -2,19 +2,16 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   template: `
-  <main class="wrapper">
-  <!-- <label> TESTE </label>
-  <button routerLink="/graphics"> CLIQUE </button> -->
-    <div id="scrollInMain" class="content-wrapper scroll">
-      <section id="main__content" class="content">
+  <main>
+    <div>
+      <section id="main__content">
         <app-header></app-header>
         <app-sidebar></app-sidebar>
+        <img class="init-img" src="./assets/img/logo.png" />
         <router-outlet></router-outlet>
-        <!--<app-footer></app-footer>-->
       </section>
     </div>
   </main>
-  <div id="sidebar-overlay"></div>
 `
 })
 export class MainComponent implements OnInit {
